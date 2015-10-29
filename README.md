@@ -1,0 +1,2 @@
+# kotchka
+wordpress theme
