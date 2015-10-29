@@ -1,0 +1,29 @@
+/* Custom Post Types PROJECTS
+   ----------------------------- */
+add_action( 'init', 'create_post_type_project' );
+function create_post_type_project() { //identificar _project permite crear otros CPT sin problemas 
+register_post_type( 'projects',
+array(
+'labels' => array(
+'name' => __( 'Projects' ),
+'singular_name' => __( 'Project' ),
+'add_new_item' => __('Add New Project'),
+'add_new' => _x('Add New', 'project'),
+'edit_item' => __('Edit Project'),
+'new_item' => __('New Project'),
+'all_items' => __('All Projects'),
+'view_item' => __('View Projects'),
+'search_items' => __('Search Projects'),
+'not_found' => __('No Projects found'),
+'not_found_in_trash' => __('No Projects found in Trash'),
+'parent_item_colon' => '',
+'menu_name' => 'Projects'
+),
+'taxonomies' => array('category'), // Allows to select Post Categories in the Custom Post Type - Required for Essential Grid selection of SOURCE / CPT / Categories
+'public' => true,
+'has_archive' => true,
+'menu_position'=>5,
+'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'comments' )
+)
+);
+}
