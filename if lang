@@ -1,0 +1,7 @@
+<?php /* LINKS LOGO with the correct LANGUAGE */
+		if(strpos($_SERVER["REQUEST_URI"], "/es/") !== false) { ?>
+			<a href="http://avarcasllongas.com/es/"><img class="logo" src="http://avarcasllongas.com/wp-content/themes/kotchka/img/logo-avarcas-llongas.png"></a>
+<?php	}
+		else { ?>
+			<a href="http://avarcasllongas.com/"><img class="logo" src="http://avarcasllongas.com/wp-content/themes/kotchka/img/logo-avarcas-llongas.png"></a>
+<?php } ?>
