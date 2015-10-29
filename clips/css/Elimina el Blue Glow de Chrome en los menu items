@@ -1,0 +1,6 @@
+//	CHROME MENU BUE GLOW ISSUE
+//  Elimina el Blue Glow de Chrome en los menu items
+//	-----------------------------
+.ubermenu *:focus{ 
+    outline:none;
+}
